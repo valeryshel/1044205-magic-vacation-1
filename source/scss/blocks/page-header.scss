@@ -251,7 +251,10 @@
       height: 2px;
       background-color: $c-light;
       right: 0;
-      transition: width 0.4s ease;
+      transition-property: background-color, width;
+      transition-duration: 0.4s, 0.4s;
+      transition-timing-function: ease, ease;
+
 
       @media (max-width: $tablet) and (orientation: portrait) {
         right: 0;
